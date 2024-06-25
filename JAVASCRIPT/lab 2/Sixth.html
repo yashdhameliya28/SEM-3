@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Enter a number"));
+        let a = ["zero","one","two","three","four","five","six","seven","eight","nine"];
+        let b = ["ten","eleven","twele","thriteen","fourteen","fiftin","sixtin","seventin","eightin","nightin"];
+        let c = ["","","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninty"];
+       
+        let result = "";
+        if(n===null||n==0){
+            document.write("Enter valid number");
+        }  
+        else if(n===isNaN(n)){
+            document.write("Enter a number");
+        }
+        else if(n>=100){
+            result = c[n.flore(n/100)] + "hundred";
+            n %= 100;
+        }
+        else if(n>=20){
+            result = b[n.flore(n/10)];
+            n %= 10; 
+        }
+
+    </script>
+</body>
+</html>
