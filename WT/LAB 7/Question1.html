@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function first(num1, num2, callback) {
+            console.log(num1 + num2 + " this is first function")
+            callback()
+        }
+        function second() {
+            console.log("hello this is second function")
+            forth()
+        }
+        function forth() {
+            console.log("forth function")
+        }
+        function third() {
+            console.log("hiii this is third function")
+        }
+        first(20, 30, second)
+        first(10, 20, third)
+    </script>
+</body>
+
+</html>

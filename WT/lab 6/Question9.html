@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name : <input type="text" onkeyup="keyPress()" id="text">
+    <script>
+        function keyPress(){
+            let alphabet = document.getElementById("text").value;
+            if(alphabet == 'a' || alphabet == 'e' || alphabet == 'i' || alphabet == 'o' || alphabet == 'u'){
+                alert("vowels")
+            }
+            else{
+                alert("not vowels")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt("Enter a number "));
+        let temp = a;
+        let rem = 0;
+        let count = 0;
+        let x = 0;
+        // for length
+        while (a > 0) {
+            count++;
+            a = parseInt(a / 10);
+        }
+        //for addtion
+        a = temp;
+        while (a > 0) {
+            rem = a % 10;
+            x = x + Math.pow(rem, count);
+            a = parseInt(a / 10);
+        }
+        //compare
+        if (temp == x) {
+            alert("number is Armstrong")
+        }
+        else {
+            alert("number is not Armstrong")
+
+        }
+    </script>
+</body>
+
+</html>

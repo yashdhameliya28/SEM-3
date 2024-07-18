@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 onmouseover="changeColour()" onmouseout="removeColoue()" id="h1">hello world</h1>
+    <button onclick="showTime()">Show date and time</button>
+    <span id="datetime"></span>
+    <br>
+    <button onclick="red()">red</button>
+    <br>
+    <button onclick="green()">green</button>
+    <script>
+        function changeColour() {
+            document.getElementById('h1').style.color = 'yellow';
+        }
+        function removeColoue() {
+            document.getElementById('h1').style.color = 'black';
+        }
+        function showTime() {
+            let d = new Date();
+            document.getElementById("datetime").innerHTML = d;
+        }
+        function red() {
+            document.body.style.backgroundColor = 'red';
+        }
+        function green() {
+
+            document.body.style.backgroundColor = 'green';
+        }
+    </script>
+</body>
+
+</html>

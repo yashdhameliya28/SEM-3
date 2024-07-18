@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name">
+    <button onclick="add()">Add</button>
+    <div id="display"></div>
+    <script>
+        arr = [];
+        function add(){
+            arr.push(document.getElementById("name").value);
+            display();
+        }
+        function display(){
+            for(i=0 ; i<arr.length ; i++){
+                document.getElementById("display").innerHTML = arr[i]+"<button onclick='edit()'>Edit</button>"+"<button onclick='delete()'>Delete</button>"
+                document.getElementById("name").value = ''
+            }
+            
+
+             
+        }
+</script>
+</body>
+</html>
